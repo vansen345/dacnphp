@@ -16098,6 +16098,7 @@ input {
 .default-form-box input[type=password],
 .default-form-box input[type=number],
 .default-form-box input[type=date],
+.default-form-box input[type=tel],
 .default-form-box textarea {
     border: 1px solid #ededed;
     border-radius: 3px;

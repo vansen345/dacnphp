@@ -60,7 +60,7 @@ include ('../layout/header.php')
                 <!--register area start-->
                 <div class="col-lg-6 col-md-6">
                     <div class="account_form register" data-aos="fade-up"  data-aos-delay="200">
-                        <h3>Đăng kí</h3>
+                        <h3>Đăng ký</h3>
                         <form action="#">
                             <div class="default-form-box">
                                 <label>Họ và tên <span style="color: red">(*)</span></label>
@@ -80,56 +80,11 @@ include ('../layout/header.php')
                             </div>
                             <div class="default-form-box">
                                 <label>Số điện thoại <span style="color: red">(*)</span></label>
-                                <input type="number">
+                                <input type="tel">
                             </div>
                             <div class="default-form-box">
-                                <label>Số nhà, đường <span style="color: red">(*)</span></label>
+                                <label>Địa chỉ <span style="color: red">(*)</span></label>
                                 <input type="text">
-                            </div>
-                            <div class="col-12">
-                                <div class="default-form-box">
-                                    <label for="country">Phường/xã <span>*</span></label>
-                                    <select class="country_option nice-select wide" name="country" id="country">
-                                        <option value="2">Bangladesh</option>
-                                        <option value="3">Algeria</option>
-                                        <option value="4">Afghanistan</option>
-                                        <option value="5">Ghana</option>
-                                        <option value="6">Albania</option>
-                                        <option value="7">Bahrain</option>
-                                        <option value="8">Colombia</option>
-                                        <option value="9">Dominican Republic</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="default-form-box">
-                                    <label>Quận/huyện <span style="color: red">(*)</span></label>
-                                    <select class="country_option nice-select wide" name="country" id="country">
-                                        <option value="2">Bangladesh</option>
-                                        <option value="3">Algeria</option>
-                                        <option value="4">Afghanistan</option>
-                                        <option value="5">Ghana</option>
-                                        <option value="6">Albania</option>
-                                        <option value="7">Bahrain</option>
-                                        <option value="8">Colombia</option>
-                                        <option value="9">Dominican Republic</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="default-form-box">
-                                    <label>Tỉnh/thành phố <span style="color: red">(*)</span></label>
-                                    <select class="country_option nice-select wide" name="country" id="country">
-                                        <option value="2">Bangladesh</option>
-                                        <option value="3">Algeria</option>
-                                        <option value="4">Afghanistan</option>
-                                        <option value="5">Ghana</option>
-                                        <option value="6">Albania</option>
-                                        <option value="7">Bahrain</option>
-                                        <option value="8">Colombia</option>
-                                        <option value="9">Dominican Republic</option>
-                                    </select>
-                                </div>
                             </div>
                             <div class="login_submit">
                                 <button class="btn btn-md btn-black-default-hover" type="submit" >Đăng ký</button>

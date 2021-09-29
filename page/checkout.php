@@ -35,29 +35,28 @@ include ('../layout/header.php')
                     <div class="user-actions accordion" data-aos="fade-up"  data-aos-delay="0">
                         <h3>
                             <i class="fa fa-file-o" aria-hidden="true"></i>
-                            Returning customer?
-                            <a class="Returning" href="#" data-bs-toggle="collapse" data-bs-target="#checkout_login" aria-expanded="true">Click here to login</a>
+                            Bạn chưa đăng nhập?
+                            <a class="Returning" href="#" data-bs-toggle="collapse" data-bs-target="#checkout_login" aria-expanded="true">Đăng nhập ngay!</a>
                         </h3>
                         <div id="checkout_login" class="collapse" data-parent="#checkout_login">
                             <div class="checkout_info">
-                                <p>If you have shopped with us before, please enter your details in the boxes below. If you are a new customer please proceed to the Billing &amp; Shipping section.</p>
                                 <form action="#">
                                     <div class="form_group default-form-box">
-                                        <label>Username or email <span>*</span></label>
+                                        <label>Email <span style="color: red">(*)</span></label>
                                         <input type="text">
                                     </div>
                                     <div class="form_group default-form-box">
-                                        <label>Password <span>*</span></label>
+                                        <label>Mật khẩu <span style="color: red">(*)</span></label>
                                         <input type="password">
                                     </div>
                                     <div class="form_group group_3 default-form-box">
-                                        <button class="btn btn-md btn-black-default-hover" type="submit">Login</button>
+                                        <button class="btn btn-md btn-black-default-hover" type="submit">Đăng nhập</button>
                                         <label class="checkbox-default">
                                             <input type="checkbox">
-                                            <span>Remember me</span>
+                                            <span>Nhớ tôi</span>
                                         </label>
                                     </div>
-                                    <a href="#">Lost your password?</a>
+                                    <a href="#">Quên mật khẩu</a>
                                 </form>
                             </div>
                         </div>
@@ -65,15 +64,15 @@ include ('../layout/header.php')
                     <div class="user-actions accordion" data-aos="fade-up"  data-aos-delay="200">
                         <h3>
                             <i class="fa fa-file-o" aria-hidden="true"></i>
-                            Returning customer?
-                            <a class="Returning" href="#" data-bs-toggle="collapse" data-bs-target="#checkout_coupon" aria-expanded="true">Click here to enter your code</a>
+                            Bạn có mã khuyến mãi?
+                            <a class="Returning" href="#" data-bs-toggle="collapse" data-bs-target="#checkout_coupon" aria-expanded="true">Nhập mã khuyến mãi!</a>
 
                         </h3>
                         <div id="checkout_coupon" class="collapse checkout_coupon" data-parent="#checkout_coupon">
                             <div class="checkout_info">
                                 <form action="#">
-                                    <input placeholder="Coupon code" type="text">
-                                    <button class="btn btn-md btn-black-default-hover" type="submit">Apply coupon</button>
+                                    <input placeholder="Mã khuyến mãi" type="text">
+                                    <button class="btn btn-md btn-black-default-hover" type="submit">Nhập</button>
                                 </form>
                             </div>
                         </div>
@@ -86,24 +85,29 @@ include ('../layout/header.php')
                 <div class="row">
                     <div class="col-lg-6 col-md-6">
                         <form action="#">
-                            <h3>Billing Details</h3>
+                            <h3>Chi tiết đơn hàng</h3>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="default-form-box">
-                                        <label>First Name <span>*</span></label>
+                                        <label>Họ và tên lót <span style="color: red">(*)</span></label>
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="default-form-box">
-                                        <label>Last Name <span>*</span></label>
+                                        <label>Tên <span style="color: red">(*)</span></label>
                                         <input type="text">
                                     </div>
                                 </div>
-                                
                                 <div class="col-12">
                                     <div class="default-form-box">
-                                        <label for="country">Country <span>*</span></label>
+                                        <label>Số nhà, đường<span style="color: red">(*)</span></label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="default-form-box">
+                                        <label for="country">Phường/ xã <span style="color: red">(*)</span></label>
                                         <select class="country_option nice-select wide" name="country" id="country">
                                             <option value="2">Bangladesh</option>
                                             <option value="3">Algeria</option>
@@ -118,80 +122,87 @@ include ('../layout/header.php')
                                 </div>
                                 <div class="col-12">
                                     <div class="default-form-box">
-                                        <label>Street address <span>*</span></label>
-                                        <input placeholder="House number and street name" type="text">
+                                        <label>Quận/ huyện <span style="color: red">(*)</span></label>
+                                        <select class="country_option nice-select wide" name="country" id="country">
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">Algeria</option>
+                                            <option value="4">Afghanistan</option>
+                                            <option value="5">Ghana</option>
+                                            <option value="6">Albania</option>
+                                            <option value="7">Bahrain</option>
+                                            <option value="8">Colombia</option>
+                                            <option value="9">Dominican Republic</option>
+                                        </select>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="default-form-box">
-                                        <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                        <label>Tỉnh/ Thành phố <span style="color: red">(*)</span></label>
+                                        <select class="country_option nice-select wide" name="country" id="country">
+                                            <option value="2">Bangladesh</option>
+                                            <option value="3">Algeria</option>
+                                            <option value="4">Afghanistan</option>
+                                            <option value="5">Ghana</option>
+                                            <option value="6">Albania</option>
+                                            <option value="7">Bahrain</option>
+                                            <option value="8">Colombia</option>
+                                            <option value="9">Dominican Republic</option>
+                                        </select>
                                     </div>
                                 </div>
-                                <div class="col-12">
+                                <div class="col-lg-6">
                                     <div class="default-form-box">
-                                        <label>Town / City <span>*</span></label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="default-form-box">
-                                        <label>State / County <span>*</span></label>
+                                        <label>Số điện thoại <span style="color: red">(*)</span></label>
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="default-form-box">
-                                        <label>Phone<span>*</span></label>
-                                        <input type="text">
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="default-form-box">
-                                        <label> Email Address <span>*</span></label>
+                                        <label> Email <span style="color: red">(*)</span></label>
                                         <input type="text">
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label class="checkbox-default" for="newAccount" data-bs-toggle="collapse" data-bs-target="#newAccountPassword">
                                         <input type="checkbox" id="newAccount">
-                                        <span>Create an account?</span>
+                                        <span>Tạo tài khoản mới?</span>
                                     </label>
                                     <div id="newAccountPassword" class="collapse mt-3" data-parent="#newAccountPassword">
                                         <div class="card-body1 default-form-box">
-                                            <label> Account password <span>*</span></label>
-                                            <input placeholder="password" type="password">
+                                            <label>Mật khẩu<span style="color: red">(*)</span></label>
+                                            <input placeholder="Mật khẩu" type="password">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-12">
                                     <label class="checkbox-default" for="newShipping" data-bs-toggle="collapse" data-bs-target="#anotherShipping">
                                         <input type="checkbox" id="newShipping">
-                                        <span>Ship to a different address?</span>
+                                        <span>Giao hàng đến địa chỉ khác</span>
                                     </label>
 
                                     <div id="anotherShipping" class="collapse mt-3" data-parent="#anotherShipping">
                                         <div class="row">
                                             <div class="col-lg-6">
                                                 <div class="default-form-box">
-                                                    <label>First Name <span>*</span></label>
+                                                    <label>Họ và tên lót <span style="color: red">(*)</span></label>
                                                     <input type="text">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="default-form-box">
-                                                    <label>Last Name <span>*</span></label>
+                                                    <label>Tên <span style="color: red">(*)</span></label>
                                                     <input type="text">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="default-form-box">
-                                                    <label>Company Name</label>
+                                                    <label>Số nhà, đường </label>
                                                     <input type="text">
                                                 </div>
                                             </div>
                                             <div class="col-12">
                                                 <div class="select_form_select default-form-box">
-                                                    <label for="countru_name">country <span>*</span></label>
+                                                    <label for="countru_name">Phường/ xã <span style="color: red">(*)</span></label>
                                                     <select class="niceselect_option wide" name="cuntry" id="countru_name">
                                                         <option value="2">Bangladesh</option>
                                                         <option value="3">Algeria</option>
@@ -206,37 +217,44 @@ include ('../layout/header.php')
                                             </div>
 
                                             <div class="col-12">
-                                                <div class="default-form-box">
-                                                    <label>Street address <span>*</span></label>
-                                                    <input placeholder="House number and street name" type="text">
+                                                <div class="select_form_select default-form-box">
+                                                    <label for="countru_name">Quận/ huyện <span style="color: red">(*)</span></label>
+                                                    <select class="niceselect_option wide" name="cuntry" id="countru_name">
+                                                        <option value="2">Bangladesh</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">Afghanistan</option>
+                                                        <option value="5">Ghana</option>
+                                                        <option value="6">Albania</option>
+                                                        <option value="7">Bahrain</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="9">Dominican Republic</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-12">
-                                                <div class="default-form-box">
-                                                    <input placeholder="Apartment, suite, unit etc. (optional)" type="text">
+                                                <div class="select_form_select default-form-box">
+                                                    <label for="countru_name">Tỉnh/ thành phố <span style="color: red">(*)</span></label>
+                                                    <select class="niceselect_option wide" name="cuntry" id="countru_name">
+                                                        <option value="2">Bangladesh</option>
+                                                        <option value="3">Algeria</option>
+                                                        <option value="4">Afghanistan</option>
+                                                        <option value="5">Ghana</option>
+                                                        <option value="6">Albania</option>
+                                                        <option value="7">Bahrain</option>
+                                                        <option value="8">Colombia</option>
+                                                        <option value="9">Dominican Republic</option>
+                                                    </select>
                                                 </div>
                                             </div>
-                                            <div class="col-12">
+                                            <div class="col-lg-6">
                                                 <div class="default-form-box">
-                                                    <label>Town / City <span>*</span></label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="default-form-box">
-                                                    <label>State / County <span>*</span></label>
+                                                    <label>Số điện thoại <span style="color: red">(*)</span></label>
                                                     <input type="text">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6">
                                                 <div class="default-form-box">
-                                                    <label>Phone<span>*</span></label>
-                                                    <input type="text">
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <div class="default-form-box">
-                                                    <label> Email Address <span>*</span></label>
+                                                    <label> Email <span style="color: red">(*)</span></label>
                                                     <input type="text">
                                                 </div>
                                             </div>
@@ -245,8 +263,8 @@ include ('../layout/header.php')
                                 </div>
                                 <div class="col-12 mt-3">
                                     <div class="order-notes">
-                                        <label for="order_note">Order Notes</label>
-                                        <textarea id="order_note" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                        <label for="order_note">Ghi chú</label>
+                                        <textarea id="order_note" placeholder="Hãy ghi chú lại điều bạn mong muốn để chúng tôi phục vụ tốt hơn!"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -254,13 +272,13 @@ include ('../layout/header.php')
                     </div>
                     <div class="col-lg-6 col-md-6">
                         <form action="#">
-                            <h3>Your order</h3>
+                            <h3>Đơn hàng của bạn</h3>
                             <div class="order_table table-responsive">
                                 <table>
                                     <thead>
                                         <tr>
-                                            <th>Product</th>
-                                            <th>Total</th>
+                                            <th>Sản phẩm</th>
+                                            <th>Tổng cộng</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -301,28 +319,28 @@ include ('../layout/header.php')
                                 <div class="panel-default">
                                     <label class="checkbox-default" for="currencyCod" data-bs-toggle="collapse" data-bs-target="#methodCod">
                                         <input type="checkbox" id="currencyCod">
-                                        <span>Cash on Delivery</span>
+                                        <span>Thanh toán khi nhận hàng (COD)</span>
                                     </label>
 
                                     <div id="methodCod" class="collapse" data-parent="#methodCod">
                                         <div class="card-body1">
-                                            <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                            <p>Vui lòng kiểm tra lại thông tin giao hàng gồm: Số nhà, đường, Phường/ xã, Quận/ huyện, Tỉnh/ thành phó</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="panel-default">
                                     <label class="checkbox-default" for="currencyPaypal" data-bs-toggle="collapse" data-bs-target="#methodPaypal">
                                         <input type="checkbox" id="currencyPaypal">
-                                        <span>PayPal</span>
+                                        <span>Thanh toán Momo</span>
                                     </label>
                                     <div id="methodPaypal" class="collapse " data-parent="#methodPaypal">
                                         <div class="card-body1">
-                                            <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                            <p>Sau khi thanh toán vui lòng chụp lại tin nhắn thanh toán thành công và gửi cho CSKH!</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="order_button pt-3">
-                                    <button class="btn btn-md btn-black-default-hover" type="submit">Proceed to PayPal</button>
+                                    <button class="btn btn-md btn-black-default-hover" type="submit">Đặt hàng</button>
                                 </div>
                             </div>
                         </form>

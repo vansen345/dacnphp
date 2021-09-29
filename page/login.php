@@ -68,7 +68,7 @@ include ('../layout/header.php')
                             </div>
                             <div class="default-form-box">
                                 <label>Email <span style="color: red">(*)</span></label>
-                                <input type="text">
+                                <input type="email">
                             </div>
                             <div class="default-form-box">
                                 <label>Mật khẩu <span style="color: red">(*)</span></label>
